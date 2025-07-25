@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مظلات سيارات شمسية | وفق اشتراطات البلدية</title>
+    <title>تحالف الطاقة | حلول الطاقة المتجددة</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap RTL CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -61,6 +67,7 @@
                 </div>
                 <div class="announcement-text">
                     <strong>قرار البلدية الجديد:</strong>
+                                        <span>انضم إلى تحالف الطاقة - رائدون في حلول الطاقة المتجددة</span>
                     <span>يجب أن تكون مظلات السيارات مصنوعة من الألواح الشمسية</span>
                 </div>
             </div>
@@ -71,15 +78,48 @@
     <header class="hero py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 text-center text-lg-end">
-                    <h1 class="display-4 fw-bold mb-4">مظلات سيارات شمسية مجانية</h1>
-                    <p class="lead mb-4">احصل على مظلة سيارة شمسية بدون أي تكلفة للتركيب أو الصيانة</p>
-                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registerModal">
-                        <i class="fas fa-solar-panel me-2"></i>اطلب الآن
-                    </button>
+                <div class="col-lg-6 text-center text-lg-end" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4 text-gradient">حلول الطاقة المتجددة المتطورة</h1>
+                    <p class="lead mb-4 text-light-emphasis">انضم إلى تحالف الطاقة واحصل على أحدث حلول الطاقة الشمسية بأفضل التقنيات</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg me-3" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            <i class="fas fa-solar-panel me-2"></i>اطلب الآن
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" onclick="scrollToSection('how-it-works')">
+                            <i class="fas fa-play-circle me-2"></i>كيف تعمل
+                        </button>
+                    </div>
+                    <div class="hero-stats mt-4">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">مظلة مركبة</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">رضا العملاء</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">الدعم الفني</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
-                    <img src="solar-carport.jpeg" alt="مظلة سيارة شمسية" class="img-fluid rounded-3 shadow">
+                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                    <div class="hero-image-container">
+                        <img src="solar-carport.jpeg" alt="مظلة سيارة شمسية" class="img-fluid rounded-3 shadow-lg">
+                        <div class="floating-badge">
+                            <i class="fas fa-leaf"></i>
+                            <span>صديق للبيئة</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,10 +128,13 @@
     <!-- المميزات -->
     <section class="features py-5 bg-light" id="features">
         <div class="container">
-            <h2 class="text-center mb-5">مميزات الخدمة</h2>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">مميزات الخدمة</h2>
+                <p class="section-subtitle">نقدم لك خدمة متكاملة بأعلى المعايير</p>
+            </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
                         <div class="card-body text-center">
                             <div class="feature-icon mb-3">
                                 <i class="fas fa-hand-holding-dollar fa-2x"></i>
@@ -101,8 +144,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
                         <div class="card-body text-center">
                             <div class="feature-icon mb-3">
                                 <i class="fas fa-building-shield fa-2x"></i>
@@ -112,19 +155,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
                         <div class="card-body text-center">
                             <div class="feature-icon mb-3">
                                 <i class="fas fa-solar-panel fa-2x"></i>
                             </div>
-                            <h5 class="card-title fw-bold">تصاميم عصرية</h5>
-                            <p class="card-text text-muted">مظلات شمسية بتصاميم مميزة</p>
+                            <h5 class="card-title fw-bold">تقنيات متقدمة</h5>
+                            <p class="card-text text-muted">حلول طاقة شمسية بأحدث التقنيات</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
                         <div class="card-body text-center">
                             <div class="feature-icon mb-3">
                                 <i class="fas fa-screwdriver-wrench fa-2x"></i>
@@ -161,7 +204,7 @@
                                 <i class="fas fa-tools fa-2x"></i>
                             </div>
                             <h5 class="card-title fw-bold">الصيانة</h5>
-                            <p class="card-text text-muted">تتعهد الشركة بالصيانة الدورية والشاملة للمظلة الشمسية طوال مدة الاستخدام.</p>
+                            <p class="card-text text-muted">تتعهد الشركة بالصيانة الدورية والشاملة لجميع حلول الطاقة الشمسية طوال مدة الاستخدام.</p>
                         </div>
                     </div>
                 </div>
@@ -172,7 +215,7 @@
                                 <i class="fas fa-check-circle fa-2x"></i>
                             </div>
                             <h5 class="card-title fw-bold">الالتزام بالمعايير</h5>
-                            <p class="card-text text-muted">تلتزم الشركة بتوفير مظلات شمسية مطابقة لجميع معايير واشتراطات البلدية.</p>
+                            <p class="card-text text-muted">تلتزم الشركة بتوفير حلول طاقة شمسية مطابقة لجميع معايير واشتراطات البلدية.</p>
                         </div>
                     </div>
                 </div>
@@ -194,75 +237,183 @@
     <!-- كيف تعمل الخدمة -->
     <section class="how-it-works py-5" id="how-it-works">
         <div class="container">
-            <h2 class="text-center mb-5">كيف تعمل الخدمة؟</h2>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">كيف تعمل الخدمة؟</h2>
+                <p class="section-subtitle">خطوات بسيطة للانضمام إلى تحالف الطاقة</p>
+            </div>
             <div class="row text-center">
-                <div class="col-md-3">
-                    <div class="step-icon mb-3">
-                        <i class="fas fa-user-plus fa-3x text-primary"></i>
+                <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="step-container">
+                        <div class="step-number">1</div>
+                        <div class="step-icon mb-3">
+                            <i class="fas fa-user-plus fa-3x"></i>
+                        </div>
+                        <h5 class="fw-bold">التسجيل</h5>
+                        <p>سجل بياناتك الأساسية عبر النموذج</p>
                     </div>
-                    <h5 class="fw-bold">التسجيل</h5>
-                    <p>سجل بياناتك الأساسية</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="step-icon mb-3">
-                        <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="step-container">
+                        <div class="step-number">2</div>
+                        <div class="step-icon mb-3">
+                            <i class="fas fa-map-marker-alt fa-3x"></i>
+                        </div>
+                        <h5 class="fw-bold">المعاينة</h5>
+                        <p>نقوم بزيارة موقعك لقياس المساحة مجاناً</p>
                     </div>
-                    <h5 class="fw-bold">المعاينة</h5>
-                    <p>نقوم بزيارة موقعك مجاناً</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="step-icon mb-3">
-                        <i class="fas fa-cogs fa-3x text-primary"></i>
+                <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="step-container">
+                        <div class="step-number">3</div>
+                        <div class="step-icon mb-3">
+                            <i class="fas fa-cogs fa-3x"></i>
+                        </div>
+                        <h5 class="fw-bold">التركيب</h5>
+                        <p>تركيب المظلة خلال أيام قليلة</p>
                     </div>
-                    <h5 class="fw-bold">التركيب</h5>
-                    <p>تركيب المظلة خلال أيام</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="step-icon mb-3">
-                        <i class="fas fa-smile fa-3x text-primary"></i>
+                <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="step-container">
+                        <div class="step-number">4</div>
+                        <div class="step-icon mb-3">
+                            <i class="fas fa-smile fa-3x"></i>
+                        </div>
+                        <h5 class="fw-bold">التشغيل</h5>
+                        <p>استمتع بالمظلة وحماية سيارتك فوراً</p>
                     </div>
-                    <h5 class="fw-bold">التشغيل</h5>
-                    <p>استمتع بالمظلة فوراً</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المراجعات -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">آراء عملائنا</h2>
+                <p class="section-subtitle">تجارب حقيقية من عملاء راضون</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"خدمة ممتازة والتركيب تم بسرعة ودقة. المظلة تحمي السيارة بشكل رائع."</p>
+                            <div class="testimonial-author">
+                                <strong>أحمد المحمد</strong>
+                                <span>الرياض</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"فريق محترف وملتزم بالمواعيد. التصميم جميل ومتوافق مع اشتراطات البلدية."</p>
+                            <div class="testimonial-author">
+                                <strong>فاطمة العلي</strong>
+                                <span>جدة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"أنصح الجميع بهذه الخدمة. مجانية تماماً والجودة عالية جداً."</p>
+                            <div class="testimonial-author">
+                                <strong>محمد السعد</strong>
+                                <span>الدمام</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- الأسئلة الشائعة -->
-    <section class="faq py-5 bg-light" id="faq">
+    <section class="faq py-5" id="faq">
         <div class="container">
-            <h2 class="text-center mb-5">الأسئلة الشائعة</h2>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <p class="section-subtitle">إجابات على أهم الأسئلة التي قد تتبادر إلى ذهنك</p>
+            </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="faq-item mb-4">
-                        <h5 class="faq-question">
-                            <i class="fas fa-plus-circle me-2"></i>
-                            هل توجد أي تكلفة؟
-                        </h5>
-                        <p class="faq-answer">لا، الخدمة مجانية بالكامل</p>
-                    </div>
-                    <div class="faq-item mb-4">
-                        <h5 class="faq-question">
-                            <i class="fas fa-plus-circle me-2"></i>
-                            هل يمكنني الاستفادة من الكهرباء المنتجة؟
-                        </h5>
-                        <p class="faq-answer">الطاقة المنتجة تعود للشركة مقابل تقديم الخدمة مجاناً</p>
+                    <div class="accordion" id="faqAccordion1">
+                        <div class="accordion-item mb-3" data-aos="fade-right" data-aos-delay="100">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    هل توجد أي تكلفة؟
+                                </button>
+                            </h5>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    لا، الخدمة مجانية بالكامل. نحن نتحمل جميع تكاليف التركيب والصيانة مقابل استفادتنا من الطاقة المنتجة.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3" data-aos="fade-right" data-aos-delay="200">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    هل يمكنني الاستفادة من الكهرباء المنتجة؟
+                                </button>
+                            </h5>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    الطاقة المنتجة تعود للشركة مقابل تقديم الخدمة مجاناً. هذا ما يمكننا من تقديم الخدمة بدون أي تكلفة عليك.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="faq-item mb-4">
-                        <h5 class="faq-question">
-                            <i class="fas fa-plus-circle me-2"></i>
-                            من يتحمل الصيانة؟
-                        </h5>
-                        <p class="faq-answer">نحن نتحمل جميع أعمال الصيانة طوال فترة الاستخدام</p>
-                    </div>
-                    <div class="faq-item mb-4">
-                        <h5 class="faq-question">
-                            <i class="fas fa-plus-circle me-2"></i>
-                            هل التصاميم قابلة للتخصيص؟
-                        </h5>
-                        <p class="faq-answer">نعم، نوفر عدة خيارات تناسب ذوقك</p>
+                    <div class="accordion" id="faqAccordion2">
+                        <div class="accordion-item mb-3" data-aos="fade-left" data-aos-delay="100">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    من يتحمل الصيانة؟
+                                </button>
+                            </h5>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    نحن نتحمل جميع أعمال الصيانة طوال فترة الاستخدام. لدينا فريق فني متخصص للصيانة الدورية.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3" data-aos="fade-left" data-aos-delay="200">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    هل التصاميم قابلة للتخصيص؟
+                                </button>
+                            </h5>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    نعم، نوفر عدة خيارات وتصاميم تناسب ذوقك ومتطلبات موقعك مع ضمان التوافق مع اشتراطات البلدية.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -295,31 +446,296 @@
 
     <!-- نموذج التسجيل Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">اطلب الآن</h5>
-                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal"></button>
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-solar-panel me-2"></i>
+                        اطلب مظلتك الشمسية الآن
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white ms-0" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="الاسم الكامل" required>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form id="registrationForm">
+                                <div class="mb-3">
+                                    <label class="form-label">الاسم الكامل *</label>
+                                    <input type="text" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">رقم الجوال *</label>
+                                    <input type="tel" class="form-control" placeholder="05xxxxxxxx" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">العنوان التفصيلي *</label>
+                                    <textarea class="form-control" rows="3" placeholder="أدخل العنوان بالتفصيل" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">نوع المبنى</label>
+                                    <select class="form-select">
+                                        <option>فيلا</option>
+                                        <option>شقة</option>
+                                        <option>مكتب</option>
+                                        <option>أخرى</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="terms" required>
+                                        <label class="form-check-label" for="terms">
+                                            أوافق على <a href="#" class="text-primary">الشروط والأحكام</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 py-2">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    تقديم الطلب
+                                </button>
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="رقم الجوال" required>
+                        <div class="col-md-6">
+                            <div class="info-panel h-100 d-flex flex-column justify-content-center">
+                                <h6 class="text-primary mb-3">
+                                    <i class="fas fa-info-circle me-2"></i>
+                                    معلومات مهمة
+                                </h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        سيتم التواصل معك خلال 24 ساعة
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        معاينة مجانية للموقع
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        تركيب خلال 3-5 أيام عمل
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        ضمان شامل لمدة 10 سنوات
+                                    </li>
+                                </ul>
+                                <div class="contact-info mt-4">
+                                    <h6 class="text-muted">للاستفسار المباشر:</h6>
+                                    <p class="mb-1">
+                                        <i class="fas fa-phone text-primary me-2"></i>
+                                        <strong>920001234</strong>
+                                    </p>
+                                    <p class="mb-0">
+                                        <i class="fas fa-envelope text-primary me-2"></i>
+                                        info@solar-carport.sa
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="العنوان" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">تقديم الطلب</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-solar-panel me-2 text-primary"></i>
+                        تحالف الطاقة
+                    </h5>
+                    <p class="text-muted">تحالف رائد في حلول الطاقة المتجددة والمستدامة، نقدم أحدث التقنيات الشمسية بما يتوافق مع رؤية المملكة 2030.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="mb-3">الخدمات</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted">مظلات السيارات</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">المظلات التجارية</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">الصيانة والدعم</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">الاستشارات</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="mb-3">روابط مهمة</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted">سياسة الخصوصية</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">الشروط والأحكام</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">اشتراطات البلدية</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="mb-3">تواصل معنا</h6>
+                    <div class="contact-info">
+                        <p class="mb-2">
+                            <i class="fas fa-phone me-2 text-primary"></i>
+                            920001234
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-envelope me-2 text-primary"></i>
+                            info@energy-alliance.sa
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                            الرياض، المملكة العربية السعودية
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">© 2025 تحالف الطاقة. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-muted">مرخص من وزارة الطاقة | رقم الترخيص: SE-2025-001</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة إلى الأعلى -->
+    <button id="backToTop" class="btn btn-primary rounded-circle position-fixed" style="bottom: 20px; left: 20px; display: none; z-index: 1000;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Smooth scrolling for navigation links
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            // Show success message
+            const modal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
+            modal.hide();
+            
+            // Show alert
+            const alertDiv = document.createElement('div');
+            alertDiv.className = 'alert alert-success alert-dismissible fade show position-fixed';
+            alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; max-width: 400px;';
+            alertDiv.innerHTML = `
+                <i class="fas fa-check-circle me-2"></i>
+                تم إرسال طلبك بنجاح! سنتواصل معك خلال 24 ساعة.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.body.appendChild(alertDiv);
+            
+            // Auto remove alert after 5 seconds
+            setTimeout(() => {
+                if (alertDiv) {
+                    alertDiv.remove();
+                }
+            }, 5000);
+            
+            // Reset form
+            form.reset();
+        });
+
+        // Add interactive effects to feature cards
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace(/\D/g, ''));
+                const suffix = counter.textContent.replace(/\d/g, '');
+                let current = 0;
+                const increment = target / 50;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + suffix;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + suffix;
+                    }
+                }, 50);
+            });
+        }
+
+        // Trigger counter animation when in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.hero-stats');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
 </body>
 </html>
